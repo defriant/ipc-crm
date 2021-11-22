@@ -1,0 +1,303 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('../img/White-Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.navbar-menu {
+    float: right;
+}
+
+.nav-link {
+    height: 64px;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    background-image: url('../img/1.jpg');
+    background-attachment: fixed;
+    height: 650px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    color: #eaeaea;
+}
+
+.jumbotron-content {
+    margin-top: 70px;
+}
+
+@media (min-width: 360px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+.pwelcome {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -60px;
+}
+
+.pp {
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-top: -50px
+}
+
+.pname {
+    font-size: 22px;
+    color: black
+}
+
+.pposition {
+    font-size: 14px;
+    color: rgb(63, 63, 63);
+}
+
+.pinfo {
+    font-size: 16px;
+    color: black;
+    margin-top: -10px;
+}
+
+.activity {
+    border-left: 6px solid #f57c00;
+    height: auto;
+    padding-left: 10px;
+    background-color: #fff7ef;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.activity-time {
+    font-size: 13px;
+    color: rgb(161, 161, 161);
+}
+
+.services-content {
+    border-left: 6px solid #f57c00;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #fff7ef;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-link {
+        height: 54px;
+    }
+
+    .dropdown-content {
+        width: 112% !important;
+    }
+}
+
+.mobile-logo {
+    width: 100px;
+    height: 63px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.services {
+    background: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services-card {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.services-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.tengah {
+    opacity: 0;
+    transform: translate();
+    transition: 1s;
+}
+
+.tengah.muncul {
+    opacity: 1;
+    transform: translate();
+}
+
+.kiri,
+.kanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.kanan {
+    transform: translate(50px, 0);
+}
+
+.kiri.muncul,
+.kanan.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.login.kanan.muncul {
+    opacity: .93;
+}
+
+.slider h3,
+.slider h5,
+.clients h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slider img {
+    opacity: 0.7;
+}
+
+nav {
+    background-color: transparent;
+    transition: .5s;
+}
+
+.brand-logo img {
+    width: 100px;
+    height: 63px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.parallax-container {
+    height: 500px;
+}
+
+.clients img {
+    width: 90px;
+    height: 90px;
+}
+
+.capt {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.parallax-container figure:hover img {
+    transform: scale(1.25);
+}
+
+section {
+    padding: 20px 0px;
+}
+
+footer img.footer-link {
+    transition: all 0.4s ease;
+}
+
+footer img.footer-link:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.2);
+}
+
+.footer-copyright img {
+    padding: 0px 3px;
+}
+
+.footer-copyright-text {
+    position: relative;
+    top: 8px;
+}
+
+.page-footer {
+    padding-top: 0px !important;
+}
+
+.foto-profil {
+    width: 27px;
+    height: 27px;
+    border: 1px solid white;
+    border-radius: 100px;
+    position: relative;
+    top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .foto-profil {
+        top: 5px;
+    }
+
+    .nav-link.notif {
+        margin-top: -3px;
+        height: 60px;
+    }
+}
+
+.overflow {
+    overflow-x: auto;
+}
+
+.tabs .tab a {
+    color: rgb(255, 81, 0);
+}
+
+.tabs .tab a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 81, 0);
+}
+
+.tabs .tab a.active {
+    background-color: rgb(0, 47, 255, 0.1) !important;
+    color: rgb(255, 81, 0);
+}
+
+.tabs .indicator {
+    background-color: rgb(255, 81, 0);
+}
+
+.datepicker-date-display {
+    background-color: #1976d2;
+}
+
+.datepicker-day-button:focus {
+    color: white !important;
+    background-color: #f57c00;
+}
+
+.datepicker-done,
+.datepicker-cancel,
+.select-dropdown li>span,
+.is-today {
+    color: #f57c00 !important;
+}
+
+td.is-selected,
+.month-prev:active,
+.month-prev:focus,
+.month-next:active,
+.month-next:focus {
+    background-color: #f57c00 !important;
+}
+
+td.is-selected.is-today {
+    color: white !important;
+}
+
+.blunt {
+    border-radius: 15px;
+}
